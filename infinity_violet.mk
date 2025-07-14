@@ -6,26 +6,26 @@
 #
 
 # Inherit from violet device
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common EvoX stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinityx stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-#EvoX Flags
-EVO_BUILD_TYPE := Unofficial
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_APERTURE_CAMERA := false
-BYPASS_CHARGE_SUPPORTED  := true
-
-#Include ViperFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+#Infinityx Flags
+INFINITY_MAINTAINER := CHRONIX x ANIRBAN
+INFINITY_BUILD_TYPE := UNOFFICIAL
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+BYPASS_CHARGE_SUPPORTED := true
 
 #GAPPS
 WITH_GMS := true
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_violet
+PRODUCT_NAME := infinity_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
