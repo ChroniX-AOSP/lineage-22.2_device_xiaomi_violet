@@ -12,13 +12,17 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common Infinityx stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
+#MIUI Camera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 #Infinityx Flags
-INFINITY_MAINTAINER := CHRONIX x ANIRBAN
+INFINITY_MAINTAINER := CHRONIX 魚
 INFINITY_BUILD_TYPE := UNOFFICIAL
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_BLUR := true
 BYPASS_CHARGE_SUPPORTED := true
+PRODUCT_NO_CAMERA := true
 
 #GAPPS
 WITH_GMS := true
