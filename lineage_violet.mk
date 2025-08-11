@@ -21,6 +21,7 @@ AXION_MAINTAINER := Joker-V2
 AXION_PROCESSOR := Qualcomm_Snapdragon_675
 PERF_GOV_SUPPORTED := true
 PERF_DEFAULT_GOV := schedutil
+PRODUCT_NO_CAMERA := false
 TARGET_ENABLE_BLUR := true
 
 # Device identifier. This must come after all inclusions.
