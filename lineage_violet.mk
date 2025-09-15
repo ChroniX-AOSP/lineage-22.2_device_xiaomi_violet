@@ -8,13 +8,15 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common EvoX stuff.
+# Inherit some common Luna stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
-#Device Flags
-ro.paranoid.maintainer=Chronix魚
-TARGET_BOOT_ANIMATION_RES := 1080
+#Lunaris Flags
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+TARGET_OPTIMIZED_DEXOPT := true
 BYPASS_CHARGE_SUPPORTED  := true
 
 #GAPPS
