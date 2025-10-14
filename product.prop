@@ -93,6 +93,9 @@ ril.subscription.types=RUIM
 # System Server
 persist.arm64.memtag.system_server=off
 
+# Mantainer
+ro.paranoid.maintainer=Chronix
+
 # Time
 persist.vendor.delta_time.enable=true
 
