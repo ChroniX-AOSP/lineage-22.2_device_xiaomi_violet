@@ -18,6 +18,7 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 LUNARIS_BUILD_TYPE := UNOFFICIAL
 TARGET_OPTIMIZED_DEXOPT := true
 BYPASS_CHARGE_SUPPORTED  := true
+WITH_BCR := true
 
 #GAPPS
 WITH_GMS := true
