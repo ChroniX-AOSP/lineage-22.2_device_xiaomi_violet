@@ -93,8 +93,8 @@ persist.arm64.memtag.system_server=off
 # Time
 persist.vendor.delta_time.enable=true
 
-#LunarisAOSP
-ro.paranoid.maintainer=CHRONIX 中尉ご
+# Mantainer
+ro.paranoid.maintainer=Chronix
 
 # Wireless display
 persist.debug.wfd.enable=1
