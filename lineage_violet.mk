@@ -16,7 +16,7 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
 #Lunaris Flags
 LUNARIS_BUILD_TYPE := UNOFFICIAL
-TARGET_OPTIMIZED_DEXOPT := true
+TARGET_OPTIMIZED_DEXOPT := false
 BYPASS_CHARGE_SUPPORTED  := true
 WITH_BCR := true
 
